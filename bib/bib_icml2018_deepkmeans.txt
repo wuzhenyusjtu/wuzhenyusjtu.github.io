@@ -1,0 +1,7 @@
+@inproceedings{wu2018deep,
+  title={Deep k-Means: Re-Training and Parameter Sharing with Harder Cluster Assignments for Compressing Deep Convolutions},
+  author={Wu, Junru and Wang, Yue and Wu, Zhenyu and Wang, Zhangyang and Veeraraghavan, Ashok and Lin, Yingyan},
+  booktitle={International Conference on Machine Learning},
+  pages={5359--5368},
+  year={2018}
+}

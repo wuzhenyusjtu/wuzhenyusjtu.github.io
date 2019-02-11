@@ -1,0 +1,7 @@
+@inproceedings{wu2018towards,
+  title={Towards Privacy-Preserving Visual Recognition via Adversarial Training: A Pilot Study},
+  author={Wu, Zhenyu and Wang, Zhangyang and Wang, Zhaowen and Jin, Hailin},
+  booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
+  pages={606--624},
+  year={2018}
+}
