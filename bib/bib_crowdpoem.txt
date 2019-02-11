@@ -1,0 +1,7 @@
+@inproceedings{Chen-et-al:HCOMP:2014,
+  author    = {Quanze Chen and Chenyang Lei and Wei Xu and Ellie Pavlick and Chris Callison-Burch},
+  title     = {Poetry of the Crowd: A Human Computation Algorithm to Convert Prose into Rhyming Verse},
+  booktitle = {Proceedings of the Second AAAI Conference on Human Computation and Crowdsourcing (HCOMP)},
+  year      = {2014},
+  url       = {http://cis.upenn.edu/~ccb/publications/poetry-generation-with-crowdsourcing.pdf}
+}

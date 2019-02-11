@@ -1,0 +1,6 @@
+@inproceedings{wnut2015overview,
+  author    = {Timothy Baldwin, Marie-Catherine de Marneffe, Bo Han, Young-Bum Kim, Alan Ritter, Wei Xu},
+  title     = {{Shared Tasks of the 2015 Workshop on Noisy User-generated Text}: {Twitter} Lexical Normalization and Named Entity Recognition},
+  booktitle = {Proceedings of the ACL 2015 Workshop on Noisy User-generated Text (WNUT)},
+  year      = {2015}
+}

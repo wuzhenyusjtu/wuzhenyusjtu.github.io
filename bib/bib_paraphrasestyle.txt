@@ -1,0 +1,6 @@
+@inproceedings{xu2012paraphrasing,
+  title={Paraphrasing for Style},
+  author={Xu, Wei and Ritter, Alan and Dolan, Bill and Grishman, Ralph and Cherry, Colin},
+  booktitle={Proceedings of the 24th International Conference on Computational Linguistics (COLING)},
+  year={2012}
+}

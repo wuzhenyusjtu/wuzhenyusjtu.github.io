@@ -1,0 +1,6 @@
+@inproceedings{kulkarni2018wetlab,
+  author     = {Kulkarni, Chaitanya and Xu, Wei and Ritter, Alan and Machiraju, Raghu},
+  title      = {An Annotated Corpus for Machine Reading of Instructions in Wet Lab Protocols},
+  booktitle = {Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL)},
+  year       = {2018}
+} 

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CSE 5525: Speech and Language Processing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../bootstrap-3.2.0-dist/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="../bootstrap-3.2.0-dist/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../bootstrap-3.2.0-dist/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../bootstrap-3.2.0-dist/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../bootstrap-3.2.0-dist/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../bootstrap-3.2.0-dist/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../bootstrap-3.2.0-dist/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+<div id="Content">
+    <h1>CSE 5525: Speech and Language Processing</h1>
+
+
+<p>
+  Fundamentals of natural language processing, automatic speech recognition and speech synthesis; lab projects
+  concentrating on building systems to process written and/or spoken language.
+</p>
+    </div>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Details</div>
+
+<ul class="list-group">
+<li class="list-group-item">Instructor: <a href="http://web.cse.ohio-state.edu/~weixu/">Wei Xu</a></li>
+<li class="list-group-item">Time: Wednesday and Friday, 12:45-2:05pm (Spring 2017)</li>
+<li class="list-group-item">Place: <a href="https://www.osu.edu/map/google.php?buildingIn=146">Bolz Hall</a> 317</li>
+<li class="list-group-item">Instructor's Office Hours: Wednesdays 4:30-5:30pm, Dreese 495</li>
+<li class="list-group-item">TA: <a href="http://web.cse.ohio-state.edu/~lanw/">Wuwei Lan</a></li>
+
+
+</ul>
+
+</div>
+
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Prerequisites</div>
+
+  <div class="panel-body">
+    <list>
+      <li>(CSE 3521 or CSE 5521) and (CSE 5522 or Stat 3460 or Stat 3470)</li>
+      <li>Math: Basic Probability and Linear Algebra</li>
+      <li>Programming: Python, Numpy/Scipy, Linux/Unix (for windows users: <a href='https://www.cygwin.com/'>https://www.cygwin.com/</a>) </li>
+    </list>
+  </div>
+</div>
+
+<!---
+<div class="panel panel-default">
+<div class="panel-heading">Topics:</div>
+<ul class="list-group">
+<li class="list-group-item">Text Classification</li>
+<li class="list-group-item">Language Modeling</li>
+<li class="list-group-item">Hidden Markov Models and Discriminative Sequence Models</li>
+<li class="list-group-item">Part of Speech Tagging and Named Entity Recognition</li>
+<li class="list-group-item">Parsing</li>
+<li class="list-group-item">Speech Recognition</li>
+<li class="list-group-item">Machine Translation</li>
+<li class="list-group-item">Information Extraction</li>
+<li class="list-group-item">Lexical Semantics</li>
+<li class="list-group-item">Other topics, time permitting</li>
+</li>
+</div>
+---!>
+
+<div class="panel panel-default">
+<div class="panel-heading">Textbook:</div>
+<ul class="list-group">
+  <li class="list-group-item">Dan Jurafsky and James H. Martin.  <i>Speech and Language Processing (<a href="https://www.cs.colorado.edu/~martin/slp.html">2nd Edition</a> and <a href="https://web.stanford.edu/~jurafsky/slp3/">3rd Edition Draft</a>)</i>.</li>
+  <li class="list-group-item">(There will be other readings as well)</li>
+</div>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Grading</div>
+
+  <div class="panel-body">
+    <p>
+      <h4>Participation (5%)</h4>
+      You will receive credit for asking and answering questions related to the homework on Piazza and engaging in-class discussion.      
+      
+      <h4>Homework (55%)</h4>
+
+      The homework will include one written assignment, three programming assignments and one market study on a company that uses speech or language techniques. Students should work independently on homework assignments (except that market research can be done by up to two students). Everyone can have three free late days without penalty for the whole semester. After you have used your free late days, you will lose 20% per day that your assignment is submitted late. Please carefully check your submitted homework - if wrong files are submitted for a homework, you may lose all the credits of that homework. 
+      
+
+      <h4>Midterm (20%)</h4>
+      There will be an in-class midterm before spring break.
+      
+      <h4>Final Projects (20%)</h4>
+      The final project is an open-ended assignment, with the goal of gaining experience applying the techniques presented in class to real-world datasets.  
+      Students should work in groups of 3-4. The final project report should be 2-4 pages. The report should describe the problem you are solving, what data is being used, the proposed technique you are applying in addition to
+      what baseline is used to compare against. Each group will give a project presentation in the last class on April 21st. 
+    </p>
+  </div>
+</div>
+
+
+
+
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Resources</div>
+
+  <div class="panel-body">
+    <list>
+      <li><a href='https://piazza.com/osu/spring2017/sp175525/'>Piazza</a> (discussion, announcements and restricted resources) </li>
+      <li><a href='https://carmen.osu.edu/'>Carmen</a> (homework submission and grades)</li>
+    </list>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Academic Integrity</div>
+
+  <div class="panel-body">
+    <list>
+      Any assignment or exam that you hand in must be your own work (with the exception of group projects). Talking with others to better understand the material is strongly encouraged.
+      However, copying a solution or letting someone copy your solution is cheating. Code you hand in must be written by you, with the exception of any code provided
+      as part of the assignment. <a href="http://www-edlab.cs.umass.edu/cs230/weeks/w01/moss-in-practice.pdf">MOSS (Measure of Software Similarity)</a> will be used routinely to detect plagiarism on programming assignments.
+      Any collaboration during an exam is considered cheating.  Any student who
+      is caught cheating will be reported to the Committee on Academic Misconduct and will receive a grade F.  Do not take a chance - if you are having trouble understanding the material, please take advantage of office hours and know that we will be happy to help.
+    </list>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Homeworks</div>
+ 
+  <div class="panel-body">
+    <list>
+    
+      <li>Market Research (10%, group, due 11:59pm, Friday, Feb 3rd, submit in Carmen)</li> 
+      <li><a href='5525_hw/CSE_5525_Spring_2017_Homework__0.pdf'>Homework 0 Background Review </a> (5%, individual, due 12:45pm, Wednesday, January 18th, hand in at the beginning of class)</li>       
+      <li><a href='5525_hw/CSE_5525_Spring_2017_Homework__1.pdf'>Homework 1 Text Classification </a> (12%, individual, due 11:59pm, Thursday, March 2nd, submit in Carmen)</li>  
+      <li><a href='5525_hw/CSE_5525_Spring_2017_Homework__2.pdf'>Homework 2 Sequential Tagging </a> (18%, individual, due 11:59pm, Thursday, April 6th, submit in Carmen)</li>     
+        
+    </list>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading"><b>Final Project (20%, group, due 11:59pm, Friday, April 21st, submit in Carmen and present in class -- no late day allowed)</b></div>
+ 
+  <div class="panel-body">
+    The final project is an open-ended assignment, with the goal of gaining experience applying the techniques presented in class to real-world datasets. Students should work in groups of 3-4. please <a href='https://docs.google.com/spreadsheets/d/150GTQ_sd5PgXPiGMoVA8ZdoDTSvmDfOlTIrHOB8DJJU/edit?usp=sharing'>sign up</a> for a group and a project. Each group will <b>submit a report together with data/code, and give a <a href='https://docs.google.com/presentation/d/1VCMxdAqMHel0QthfmsEmACELFbp40ai9BywiYKDb_rI/edit?usp=sharing
+'>5-minute project presentation</a> (and/or demo)</b> in the last class on April 21st. It is acceptable to do the same work for this project and another class’s project, however, you must make this clear and write down the exact portion of the project that is being counted for CSE 5525. 
+    <br><br>
+    For inspiration, here are some <a href="https://nlp.stanford.edu/courses/cs224n/">example NLP course projects</a> done by students. There are also many NLP shared tasks with existing datasets and sometimes baseline systems at <a href="http://alt.qcri.org/semeval2017/index.php?id=tasks">SemEval</a> and <a htef="http://noisy-text.github.io/2017/">WNUT</a> (also check previous years). If you want to get some Twitter data to work with, you can follow the <a href="http://socialmedia-class.org/twittertutorial.html">Twitter API tutorial</a> written by the instructor. At minimal, you could learn and implement the <a href="http://mt-class.org/penn/hw1.html">word alignment</a> or <a href="http://mt-class.org/penn/hw2.html">decoding</a> components in the statistical machine translation system (both are well-structured homework assignments in Machine Translation course). 
+    <br>
+    <br>
+    Report (2-4 pages, not including references):
+    <list>
+      <li>Title and Author(s)
+      <li>Goal: What are you trying to do? Give an example of inputs/outputs or user interaction. How might it be helpful to people?</li>
+      <li>Method: How are you trying to solve the problem? What are existing approaches to the problem?</li>
+      <li>Experiments: What data do you use? What metric(s) do you use to measure success? What baseline method do you compare against? How well do your methods perform compared with the baseline, and why?</li> 
+      <li>Conclusions: What did you learn from your experiments? Suggest future ideas. </li>
+      <li>Replicability: Submit (or include links to) all the code that you wrote and all the data that you used.</li>
+      <li>Related Work and Reference: This is absolutely necessary. You may use any existing code, libraries, etc. and consult any papers, books, online references, etc. for your project. However, you must cite your sources in your writeup and clearly indicate which parts of the project are your contribution and which parts were implemented by others.</li>
+      </list>
+    <br>
+The rubric for projects is as follows:
+    <list>
+      <li>An A (90%) project shows evidence of a working implementation; the writeup comprehensively analyzes the system's strengths and weaknesses as well as answering all questions in the assignment; some optional or novel feature has been included, or there is interesting speculation about extensions to the basic algorithm.</li>
+<li>A B (80%) project shows evidence of a working implementation. The writeup is adequate, but lacks a full analysis, and there are no suggestions for extensions or novel features.</li>
+<li>A C (70%) project shows evidence of a mostly-working implementation, with some attempt to explain what went wrong and why.</li>
+<li>A D (60%) project does not work at all, or shows a misunderstanding of basic concepts.</li>
+<li>An E (<60%) project is not turned in on time.</li> 
+    </list>
+    <br>   
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">In-class Exercises</div>
+ 
+  <div class="panel-body">
+    <list>
+      <li><a href='https://piazza.com/osu/spring2017/sp175525/resources'>Exercise 1</a> (solution to a similar example in J+M, 3rd Edition <a href='https://piazza.com/osu/spring2017/sp175525/resources'>6.3</a>)</li>
+      <li><a href='https://piazza.com/osu/spring2017/sp175525/resources'>Exercise 2</a> (solution taught in class on <a href='5525_slides_spring17/05_more_logistic_regression.pdf'>1/25</a>)</li>
+      <li><a href='https://piazza.com/osu/spring2017/sp175525/resources'>Exercise 3</a> (solution in Daume's CIML <a href='http://www.ciml.info/dl/v0_99/ciml-v0_99-ch04.pdf'>Chapter 4</a>)</li>
+      <li><a href='https://piazza.com/osu/spring2017/sp175525/resources'>Exercise 4</a> (solution to a similar example in J+M, 3rd Edition <a href='https://piazza.com/osu/spring2017/sp175525/resources'>4.1 and 4.4.1</a>)</li></li>
+      <li><a href='https://piazza.com/osu/spring2017/sp175525/resources'>Exercise 5</a> (solution taught in class on <a href='5525_slides_spring17/11_part_of_speech_tagging.pdf'>2/15</a>)</li>
+      <li><a href='https://piazza.com/osu/spring2017/sp175525/resources'>Exercise 6</a> (solution in Ralph Grishman's <a href='http://cs.nyu.edu/courses/spring15/CSCI-GA.2590-001/Viterbi.pdf'>slides</a>, a similar example in J+M Edition <a href='https://piazza.com/osu/spring2017/sp175525/resources'>10.4.3</a>)</li>
+      <li><a href='https://piazza.com/osu/spring2017/sp175525/resources'>Exercise 7</a> (solution in J+M Edition <a href='https://piazza.com/osu/spring2017/sp175525/resources'>7.1 and 7.2</a>)</li>
+      <li><a href='https://piazza.com/osu/spring2017/sp175525/resources'>Exercise 8</a> (solution taught in class on <a href='5525_slides_spring17/18_syntax.pdf'>3/24</a>)</li>
+      <li><a href='https://piazza.com/osu/spring2017/sp175525/resources'>Exercise 9</a> (solution taught in class on <a href='5525_slides_spring17/19_parsing.pdf'>3/29</a>)</li>
+      <li><a href='https://piazza.com/osu/spring2017/sp175525/resources'>Exercise 10</a> (solution taught in class on <a href='5525_slides_spring17/22_neural_language_model.pdf'>4/14</a>)</li>
+    </list>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Anonymous Feedback</div>
+  <div class="panel-body">
+    <list>
+      <a href='https://goo.gl/forms/jKFQOoyHAZO3VYhn1'>https://goo.gl/forms/jKFQOoyHAZO3VYhn1</a>
+    </list>
+  </div>  
+</div>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Schedule (subject to change; slides and readings will be updated as the term progresses) </div>
+
+  <!-- Table -->
+  <table class="table">
+      <thead>
+	<tr>
+	  <th>Date</th>
+	  <th>Topic</th>
+	  <th>Required Reading</th>
+	  <th>Suggested Reading</th>
+	</tr>
+      </thead>
+    <tr>
+      <td>1/11</td>
+      <td><a href='5525_slides_spring17/01_introduction.pdf'>Course Overview</a></td>
+      <td>J+M, 2nd Edition <a href='http://www.cs.colorado.edu/~martin/SLP/Updates/1.pdf'>Chapter 1</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1/13</td>
+      <td><a href='5525_slides_spring17/02_probability_nb.pdf'>Probability Review and Naive Bayes</a></td>
+      <td>Mackay Book <a href='https://piazza.com/osu/spring2017/sp175525/resources'>2.1-2.3</a> (Probability), J+M, 3rd Edition <a href='https://piazza.com/osu/spring2017/sp175525/resources'>6.1</a> (Naive Bayes)</td>
+      <td>Crane's <a href='http://www.stat.rutgers.edu/home/hcrane/Teaching/582/lectures/chapter5-Bayes.pdf'>notes</a> (Bayes' Rule)</td>
+    </tr>
+    <tr>
+      <td>1/13</td>
+      <td><a href='https://cse.osu.edu/events/2017/01/ai-series-guest-speaker-zhou-yu'>Guest Speaker: Zhou Yu (CMU)</a> Dreese Labs 480, 3:00pm </td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1/18</td>
+      <td><a href='5525_slides_spring17/03_more_nb.pdf'>Text Classification</a></td>
+      <td>J+M, 3rd Edition <a href='https://piazza.com/osu/spring2017/sp175525/resources'>6.2-6.4</a> (Naive Bayes)</td>
+      <td>Shimodaira's <a href='http://www.inf.ed.ac.uk/teaching/courses/inf2b/learnnotes/inf2b-learn-note07-2up.pdf'>notes</a> (Naive Bayes)</td>
+    </tr>
+    <tr>
+      <td>1/20</td>
+      <td><a href='5525_slides_spring17/04_logistic_regression.pdf'>Logistic Regression</a></td>
+      <td>J+M, 3rd Edition <a href='https://piazza.com/osu/spring2017/sp175525/resources'>7.1-7.3</a> (Logistic Regression)</td>
+      <td>Michael Collins' <a href='http://www.cs.columbia.edu/~mcollins/loglinear.pdf'>notes</a> (Log-Linear Models)</td>
+    </tr>
+    <tr>
+      <td>1/25</td>
+      <td><a href='5525_slides_spring17/05_more_logistic_regression.pdf'>More Logistic Regression</a></td>
+      <td>J+M, 3rd Edition <a href='https://piazza.com/osu/spring2017/sp175525/resources'>7.4-7.5</a> (Logistic Regression)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1/27</td>
+      <td><a href='5525_slides_spring17/06_perceptron.pdf'>Multi-class Logistic Regression and Perceptron</a></td>
+      <td>J+M, 3rd Edition <a href='https://piazza.com/osu/spring2017/sp175525/resources'>6.6-6.8</a> (Multi-class), Daume's CIML <a href='http://www.ciml.info/dl/v0_99/ciml-v0_99-ch04.pdf'>4.1-4.4</a> (Perceptron Algorithm)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2/1</td>
+      <td><a href='5525_slides_spring17/07_more_perceptron.pdf'>More Perceptron</a></td>
+      <td>Daume's CIML <a href='http://www.ciml.info/dl/v0_99/ciml-v0_99-ch04.pdf'>4.5-4.7</a> (Perceptron Algorithm)</td>
+      <td></td>
+    </tr>   
+    <tr>
+      <td>2/3</td>
+      <td><a href='5525_slides_spring17/08_language_models.pdf'>Language Modeling</a></td>
+      <td>J+M, 3rd Edition <a href='https://piazza.com/osu/spring2017/sp175525/resources'>4.1-4.2</a> (Language Models)</td>
+      <td></td>
+    </tr> 
+    <tr>
+      <td>2/8</td>
+      <td><a href='5525_slides_spring17/09_add_one_smoothing.pdf'>More Language Modeling</a></td>
+      <td>J+M, 3rd Edition <a href='https://piazza.com/osu/spring2017/sp175525/resources'>4.3-4.4</a> (Language Models)</td>
+      <td></td>
+    </tr>     
+    <tr>
+      <td>2/10</td>
+      <td><a href='5525_slides_spring17/10_advanced_smoothing.pdf'>Kneser-Ney Smoothing</a></td>
+      <td>J+M, 3rd Edition <a href='https://piazza.com/osu/spring2017/sp175525/resources'>4.4-4.6</a> (Language Models)</td>
+      <td>Michael Collins' <a href='http://www.cs.columbia.edu/~mcollins/lm-spring2013.pdf'>notes</a> (Language Models)</td>
+    </tr>   
+    <tr>
+      <td>2/15</td>
+      <td><a href='5525_slides_spring17/11_part_of_speech_tagging.pdf'>Parts of Speech and Hidden Markov Models</a></td>
+      <td>J+M, 3rd Edition <a href='https://piazza.com/osu/spring2017/sp175525/resources'>10.1-10.3</a> (Part-of-Speech Tagging) and <a href='https://piazza.com/osu/spring2017/sp175525/resources'>9.1-9.2</a> (Hidden Markov Models)</td>
+      <td>Michael Collins' <a href='http://www.cs.columbia.edu/~mcollins/hmms-spring2013.pdf'>notes</a> (Hidden Markov Models)</td>
+    </tr>  
+    <tr>
+      <td>2/17</td>
+      <td><a href='5525_slides_spring17/12_viterbi_algorithm.pdf'>The Viterbi Algorithm</a></td>
+      <td>J+M, 3rd Edition <a href='https://piazza.com/osu/spring2017/sp175525/resources'>9.3-9.4, 10.4</a></td>
+      <td></td>
+    </tr>  
+    <tr>
+      <td>2/22</td>
+      <td><a href='5525_slides_spring17/13_memm.pdf'>Maximum Entropy Markov Models</a></td>
+      <td>J+M, 3rd Edition <a href='https://piazza.com/osu/spring2016/5525/resources'>10.5</a></td>
+      <td></td>
+    </tr>  
+    <tr>
+      <td>2/24</td>
+      <td><a href='5525_slides_spring17/14_loglinear_models.pdf'>Log-linear Models</a></td>
+    <td>J+M, 3rd Edition <a href='https://piazza.com/osu/spring2017/sp175525/resources'>7.1-7.5</a> (Logistic Regression)</td>
+      <td>Michael Collins' <a href='http://www.cs.columbia.edu/~mcollins/courses/6998-2012/notes/loglinear.2011.pdf'>notes</a> (Log-Linear Models)</td>
+    </tr> 
+    <tr>
+      <td>3/1</td>
+      <td><a href='5525_slides_spring17/15_more_memm.pdf'>More Maximum Entropy Markov Models</a></td>
+      <td>J+M, 3rd Edition <a href='https://piazza.com/osu/spring2016/5525/resources'>10.5</a></td>
+      <td>Michael Collins' <a href='http://www.cs.columbia.edu/~mcollins/fall2014-loglineartaggers.pdf'>notes</a> (MEMMs)</td>
+    </tr>
+    <tr>
+      <td>3/3</td>
+      <td><a href='5525_slides_spring17/16_midterm_review.pdf'>Midterm Review</a></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3/3</td>
+      <td><a href='https://cse.osu.edu/events/2017/03/distinguished-guest-speaker-raymond-j.-mooney'>Distinguished Speaker: Raymond J. Mooney (UT Austin)</a> Dreese Labs 480, 3:00pm </td>
+      <td>LSTM for Language and Vision</td>
+      <td>Venugopalan et al.'s <a href='http://www.cs.utexas.edu/users/ml/papers/venugopalan.emnlp16.pdf'>paper</a> (Vedio Captioning)</td>
+    </tr>
+    <tr>
+      <td>3/8</td>
+      <td>Guest Lecture: <a href='https://sites.google.com/site/jeniyatabassum/'>Jeniya Tabassum</a></td>
+      <td><a href='https://drive.google.com/file/d/0BwfDbQubcp16aVFvd0lZQXNTUzQ/view?usp=sharing'>Probabilistic Graphical Model with Latent Variables</a></td>
+      <td>Tabassum et al.'s <a href='https://aclweb.org/anthology/D16-1030.pdf'>EMNLP  2016 paper</a></td>
+    </tr>
+    <tr>
+      <td>3/10</td>
+      <td>Midterm (in class, closed book)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3/22</td>
+      <td><a href='5525_slides_spring17/17_crf.pdf'>Conditional Random Fields and Structured Perceptron</a></td>
+      <td>Daume's CIML <a href='http://ciml.info/dl/v0_99/ciml-v0_99-ch17.pdf'>17.1-17.3 and 17.6-17.7</a> (Structured Prediction)</td>
+      <td>Sutton and McCallum's <a href='http://homepages.inf.ed.ac.uk/csutton/publications/crftut-fnt.pdf'>CRF Tutorial</a></td>
+    </tr>
+    <tr>
+      <td>3/24</td>
+      <td><a href='5525_slides_spring17/18_syntax.pdf'>Syntax and Context Free Grammars</a></td>
+      <td>J+M, 3rd Edition <a href='https://piazza.com/osu/spring2016/5525/resources'>Chapter 11</a> (Formal Grammars)</td>
+      <td></td>
+    <tr>
+      <td>3/24</td>
+      <td><a href='https://cse.osu.edu/events/2017/03/ai-series-guest-speaker-dan-garrette'>Guest Speaker: Dan Garrette (Google)</a> Dreese Labs 480, 3:00pm </td>
+      <td>Combinatory Categorial Grammars (CCGs)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>3/29</td>
+      <td><a href='5525_slides_spring17/19_parsing.pdf'>Parsing and CKY Algorithm</a></td>
+      <td>J+M, 3rd Edition <a href='https://piazza.com/osu/spring2016/5525/resources'>Chapter 12</a> (Syntactic Parsing)</td>
+      <td>Collins et al.'s <a href='http://www.aclweb.org/anthology/P05-1063.pdf'>paper</a> (Global Linear Model)</td>
+    </tr>
+    <tr>
+      <td>3/31</td>
+      <td><a href='5525_slides_spring17/20_asr.pdf'>Automatic Speech Recognition</a></td>
+      <td><a href='https://www.cs.colorado.edu/~martin/slp.html'>J+M, 2nd Edition</a> Chapter 9</a> (Automatic Speech Recognition)</td></td>
+      <td>Juang and Rabiner's <a href='http://www.ece.ucsb.edu/Faculty/Rabiner/ece259/Reprints/354_LALI-ASRHistory-final-10-8.pdf'>Automatic Speech Recognition – A Brief History of the Technology
+Development</a>, Gales and Young <a href='http://mi.eng.cam.ac.uk/~sjy/papers/gayo07.pdf'>review</a> (HMM-based ASR)</td>
+    </tr>
+    <tr>
+      <td>4/5</td>
+      <td>Guest Lecture: <a href='http://www.ling.ohio-state.edu/~elsner.14/'>Micha Elsner</a></td>
+      <td><a href='http://www.ling.ohio-state.edu/~elsner.14/files/ilp.pdf'>Integer Linear Programming (ILP)</a></td>
+      <td>Clarke and Lapata's <a href='http://www.aaai.org/Papers/JAIR/Vol31/JAIR-3112.pdf'>paper</a> (Integer Linear Programming)</td>
+    </tr>
+    <tr>
+      <td>4/7</td>
+      <td><a href='5525_slides_spring17/21_deep_speech.pdf'>Deep Learning for Speech Recognition</a></td>
+      <td></td>
+      <td>Graves et al.'s <a href='http://www.cs.toronto.edu/~graves/icml_2006.pdf'>paper</a> (Connectionist Temporal Classification)</td>
+    </tr>
+    <tr>
+      <td>4/12</td>
+      <td><a href='5525_slides_spring17/21_deep_speech.pdf'>More Deep Learning for Speech Recognition</a></td>
+      <td></td>
+      <td>Baidu Research's <a href='http://jmlr.org/proceedings/papers/v48/amodei16.pdf'>paper</a> (Deep Speech)</td>
+    </tr>    
+    <tr>
+      <td>4/14</td>
+      <td><a href='5525_slides_spring17/22_neural_language_model.pdf'>Neural Network Language Modeling</a></td>
+      <td>Koehn's <a href='http://mt-class.org/jhu/assets/papers/neural-network-models.pdf'>15.1-15.2.3</a> (Neural Networks)</td>
+      <td>Bengio et al.'s <a href='http://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf'>paper</a> (Neural Language Models)</td>
+    </tr> 
+    <tr>
+      <td>4/19</td>
+      <td><a href='5525_slides_spring17/23_deep_NLP.pdf'>Deep Learning for NLP</a></td>
+      <td></td>
+      <td>Goldberg's <a href='http://u.cs.biu.ac.il/~yogo/nnlp.pdf'>tutorial</a> (Neural Networks in NLP)</td>
+    </tr> 
+    <tr>
+      <td>4/21</td>
+      <td>Project Presentations</td>
+      <td></td>
+      <td></td>
+    </tr>    
+  </table>
+</div>
+
+
+
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Market Research (10%, due 11:59pm, Friday, Feb 3rd, submit in Carmen)</div>
+ 
+  <div class="panel-body">
+    This homework can be done by up to two students.
+    <br>
+    Step 1: watch some example presentations of company profiling:
+    <list>
+      <li><a href='https://vimeo.com/106347045'>Example Presentation 1</a> (Iceland’s Crowdsourced Constitution by Abhishek GAdiraju)</li>
+      <li><a href='https://vimeo.com/106529777'>Example Presentation 2</a> (Silk Road by Shreshth Khilani)</li>
+      <li><a href='https://vimeo.com/106435795'>Example Presentation 3</a> (Kiva: Loans That Change Lives by Morgan Snyder and Tiffany Lu)</li> 
+      </list>
+    Step 2: please <a href='https://docs.google.com/spreadsheets/d/150GTQ_sd5PgXPiGMoVA8ZdoDTSvmDfOlTIrHOB8DJJU/edit?usp=sharing'>sign up</a> for a company and a date for in-class presentation (play your recorded video presentation and answer questions). Please do not pick a company that another student has already signed up for.
+    <br>
+    Step 3: create a 5-minute video presentation about the company. To turn in your video, please upload it to Vimeo following the <a href='Vimeo_instructions.png'>instructions</a>, then submit the link to your video in <a href='https://carmen.osu.edu/'>Carmen</a>. 
+    <br>
+    Step 4: if you would like to give other students feedbacks, you may use the peer grading function in Carmen following the <a href='https://docs.google.com/presentation/d/1gaA0KRKKL3gbxFgUbyRfjzV8kRuKOkM4oXJuAekO8vo/edit?usp=sharing'>instructions</a>. 
+    <br>
+    <br> Here is an incomplete list of companies: 3M Cogent, Apple, AI2, Amazon, App Orchid, Aylien, Baidu, BirdEye, Bloomberg, Bosch, Digital Reasoning, Duolingo, MetaMind, ETS, Expect Labs, Facebook, FiscalNote, Genee, Google, Grammarly, Huawei, IBM, Klevu, KITT.AI, Lexalytics, Lattice, Lilt, NetBase, Newsela, NetBase, New York Times, Microsoft, Narrative Science, Nuance, Safaba, SwiftKey, SyTrue, SRI, Thomson Reuters, Twitter, Veritone, Verizon, Vphrase, Yahoo!, Yelp. You can find many others. 
+    <br>
+    <br> Below are some questions you may consider to address in your presentation (and you should cite sources in your presentation, for example, list the URLs of online resources you used):
+    <list>
+      <li>When was the company started?
+      <li>Who were the founders?
+      <li>What kind of organization is it? (publicly traded company, privately held company, non-profit organization, other)
+      <li>What is company's main business model?
+      <li>How does the company generate revenue?
+      <li>What is the finance situation of the company? (stock price, annual report, news)
+      <li>Why is the company interested in speech or NLP technologies or both?
+      <li>What are specific areas or applications of speech/NLP the company is interested in?
+      <li>What products of the company use speech or NLP technologies?
+      <li>What the main users of their speech or NLP technologies?
+      <li>Does the company hold any patent using speech or NLP technologies?
+      <li>Does the company publish any papers on speech or NLP technologies?
+      <li>Is the company recently hiring in NLP? interns? phd?
+      <li>What specific expertises within speech or NLP the company is looking to hire?
+      <li>How is the press coverage of the company?
+      <li>How many employees do the company have?
+      <li>An estimation of how many speech/NLP experts currently in the company?
+      <li>Any notable speech/NLP researcher or recent hires in the company?
+      <li>Which city is the company's speech/NLP research office located?
+    </list>
+    
+  </div>
+</div>
+
+
+</div> <!-- End Content -->
+
+
+    <script src="../bootstrap-3.2.0-dist/js/bootstrap-min.js"></script>
+
+  </body>
+</html>

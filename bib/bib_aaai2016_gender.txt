@@ -1,0 +1,7 @@
+@inproceedings{paraphrase16aaai,
+author = {Preo\c{t}iuc-Pietro, Daniel and Xu, Wei and Ungar, Lyle},
+title = {{Discovering user attribute stylistic differences via paraphrasing}},
+booktitle = {{Proceedings of the Thirtieth AAAI Conference on Artificial Intelligence}},
+series = {AAAI},
+year = {2016}
+}

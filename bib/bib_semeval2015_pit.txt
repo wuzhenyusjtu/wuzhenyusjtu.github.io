@@ -1,0 +1,6 @@
+@inproceedings{xu2015semeval,
+  author    = {Wei Xu and Chris Callison-Burch and William B. Dolan},
+  title     = {{SemEval-2015 Task} 1: Paraphrase and Semantic Similarity in {Twitter} ({PIT})},
+  booktitle = {Proceedings of the 9th International Workshop on Semantic Evaluation (SemEval)},
+  year      = {2015}
+}

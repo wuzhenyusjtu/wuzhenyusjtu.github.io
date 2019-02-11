@@ -1,0 +1,9 @@
+@inproceedings{guided2013,
+  title={Infusion of Labeled Data into Distant Supervision for Relation Extraction},
+  author={Maria Pershina and Min, Bonan and Xu, Wei and Grishman, Ralph},
+  booktitle = {Proceedings of the 2014 Conference of the Association for Computational Linguistics (ACL 2014)},
+  month     = {June},
+  year      = {2014},
+  address   = {Baltimore, US},
+  publisher = {Association for Computational Linguistics}
+}

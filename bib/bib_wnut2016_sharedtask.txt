@@ -1,0 +1,6 @@
+@inproceedings{strauss2016results,
+  title={Results of the {WNUT16} named entity recognition shared task},
+  author={Strauss, Benjamin and Toma, Bethany E and Ritter, Alan and de Marneffe, Marie-Catherine and Xu, Wei},
+  booktitle={Proceedings of COLING 2016 Workshop on Noisy User-generated Text (WNUT)},
+  year={2016}
+}

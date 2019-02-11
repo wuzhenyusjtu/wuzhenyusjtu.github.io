@@ -1,0 +1,8 @@
+@inproceedings{meyers2009transducing,
+  title={Transducing logical relations from automatic and manual GLARF},
+  author={Meyers, Adam and Kosaka, Michiko and Ji, Heng and Xue, Nianwen and Harper, Mary and Sun, Ang and Xu, Wei and Liao, Shasha},
+  booktitle={Proceedings of the Third Linguistic Annotation Workshop},
+  pages={116--120},
+  year={2009},
+  organization={Association for Computational Linguistics}
+}

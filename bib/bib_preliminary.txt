@@ -1,0 +1,10 @@
+@inproceedings{xu2013preliminary,
+  title={A Preliminary Study of Tweet Summarization using Information Extraction},
+  author={Xu, Wei and Grishman, Ralph and Meyers, Adam and Ritter, Alan},
+  booktitle={Proceedings of the Workshop on Language Analysis in Social Media (LASM)},
+  month     = {June},
+  year      = {2013},
+  address   = {Atlanta, Georgia},
+  publisher = {Association for Computational Linguistics},
+  url = {http://aclweb.org/anthology/W/W13/W13-1103.pdf}
+}

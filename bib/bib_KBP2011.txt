@@ -1,0 +1,6 @@
+@inproceedings{sun2011new,
+  title={New York University 2011 System for KBP Slot Filling.},
+  author={Sun, Ang and Grishman, Ralph and Xu, Wei and Min, Bonan},
+  booktitle={Proceedings of the Text Analysis Conference (TAC)},
+  year={2011}
+}

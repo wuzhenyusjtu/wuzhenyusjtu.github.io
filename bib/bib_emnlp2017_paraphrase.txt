@@ -1,0 +1,6 @@
+@inproceedings{lan2017continuously,
+  title={A Continuously Growing Dataset of Sentential Paraphrases},
+  author={Lan, Wuwei and Qiu, Siyu and He, Hua and Xu, Wei},
+  booktitle = {Proceedings of The 2017 Conference on Empirical Methods on Natural Language Processing (EMNLP)},
+  year={2017}
+}

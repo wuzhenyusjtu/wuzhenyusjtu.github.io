@@ -1,0 +1,6 @@
+@inproceedings{mao2007using,
+  title={Using Non-Local Features to Improve Named Entity Recognition Recall.},
+  author={Mao, Xinnian and Xu, Wei and Dong, Yuan and He, Saike and Wang, Haila},
+  booktitle={Proceedings of the 21st Pacific Asia Conference on Language, Information and Computation (PACLIC)},
+  year={2007}
+}

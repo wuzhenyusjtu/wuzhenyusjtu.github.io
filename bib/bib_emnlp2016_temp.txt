@@ -1,0 +1,6 @@
+@inproceedings{tabassum2016minimally,
+  title={A Minimally Supervised Method for Recognizing and Normalizing Time Expressions in Twitter},
+  author={Tabassum, Jeniya and Ritter, Alan and Xu, Wei},
+  booktitle = {Proceedings of The 2016 Conference on Empirical Methods on Natural Language Processing (EMNLP)},
+  year={2016}
+}

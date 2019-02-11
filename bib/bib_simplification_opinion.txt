@@ -1,0 +1,10 @@
+@article{Xu-EtAl:2015:TACL,
+  author = {Wei Xu and Chris Callison-Burch and Courtney Napoles},
+  title = {Problems in Current Text Simplification Research: New Data Can
+Help},
+  journal = {Transactions of the Association for Computational Linguistics},
+  volume = {3},
+  year = {2015},
+  url = {http://www.cis.upenn.edu/~ccb/publications/publications/new-data-for-text-simplification.pdf},
+  pages = {283--297}
+}

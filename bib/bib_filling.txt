@@ -1,0 +1,10 @@
+@inproceedings{xu2013filling,
+  title={Filling knowledge base gaps for distant supervision of relation extraction},
+  author={Xu, Wei and Le, Zhao and Hoffmann, Raphael and Grishman, Ralph},
+  booktitle = {Proceedings of the 2013 Conference of the Association for Computational Linguistics (ACL 2013)},
+  month     = {July},
+  year      = {2013},
+  address   = {Sofia, Bulgaria},
+  publisher = {Association for Computational Linguistics},
+  url = {http://aclweb.org/anthology/P/P13/P13-2117.pdf}
+}

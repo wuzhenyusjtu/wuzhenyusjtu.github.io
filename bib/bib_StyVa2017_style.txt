@@ -1,0 +1,7 @@
+@inproceedings{xu2017style,
+  title={From {Shakespeare} to {Twitter}: {W}hat are Language Styles all about?},
+  author={Xu, Wei},
+  booktitle={Proceedings of EMNLP 2017 Workshop on Stylistic Variation},
+  year      = {2017},
+  publisher = {Association for Computational Linguistics},
+}

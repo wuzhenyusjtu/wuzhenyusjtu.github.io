@@ -1,0 +1,6 @@
+@inproceedings{xu2015user,
+  author    = {Daniel Preo{\c t}iuc-Pietro and Wei Xu and Lyle Ungar},
+  title     = {Discovering User Attribute Stylistic Differences via Paraphrasing},
+  booktitle = {Proceedings of the 30th AAAI Conference on Artificial Intelligence (AAAI)},
+  year = {2016}
+}

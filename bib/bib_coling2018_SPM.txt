@@ -1,0 +1,6 @@
+@inproceedings{lan2018toolkit,
+  author     = {Lan, Wuwei and Xu, Wei},
+  title      = {Neural Network Models for Paraphrase Identification, Semantic Textual Similarity, Natural Language Inference, and Question Answering},
+  booktitle  = {Proceedings of the 27th International Conference on Computational Linguistics (COLING)},
+  year       = {2018}
+} 

@@ -1,0 +1,9 @@
+@inproceedings{gao2015cost,
+author = {Mingkun Gao and Wei Xu and Chris Callison-Burch},
+title = {Cost Optimization in Crowdsourcing Translation},
+booktitle = {Proceedings of the 2015 Conference of the North American Chapter of the Association for Computational Linguistics (NAACL 2015)},
+month = {June},
+year = {2015},
+address = {Denver, Colorado},
+publisher = {Association for Computational Linguistics}
+}

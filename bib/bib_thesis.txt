@@ -1,0 +1,6 @@
+@phdthesis{xu2014data,
+ author = {Xu, Wei},
+ title = {Data-Drive Approaches for Paraphrasing Across Language Variations},
+ school = {Department of Computer Science, New York University},
+ year = {2014}
+}

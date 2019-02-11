@@ -1,0 +1,8 @@
+@inproceedings{xu2009parse,
+  title={A parse-and-trim approach with information significance for chinese sentence compression},
+  author={Xu, Wei and Grishman, Ralph},
+  booktitle={Proceedings of the 2009 Workshop on Language Generation and Summarisation},
+  pages={48--55},
+  year={2009},
+  organization={Association for Computational Linguistics}
+}
