@@ -71,3 +71,11 @@ ul.pub {
 }
 
 
+.google_scholar {
+    background: url('pics/google_scholar_logo.png');
+    background-size: 15px;
+    height: 15px;
+    width: 15px;
+    display: block;
+    white-space:nowrap;
+}
