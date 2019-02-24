@@ -72,10 +72,9 @@ ul.pub {
 
 
 .google_scholar {
-    background: url('pics/google_scholar_logo.png');
-    background-size: 15px;
-    height: 15px;
-    width: 15px;
-    display: block;
-    white-space:nowrap;
+    background: url('pics/google_scholar.png');
+    background-size: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
 }
