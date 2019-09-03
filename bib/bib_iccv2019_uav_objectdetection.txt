@@ -1,0 +1,6 @@
+@article{wu2019delving,
+  title={Delving into Robust Object Detection from Unmanned Aerial Vehicles: A Deep Nuisance Disentanglement Approach},
+  author={Wu, Zhenyu and Suresh, Karthik and Narayanan, Priya and Xu, Hongyu and Kwon, Heesung and Wang, Zhangyang},
+  journal={arXiv preprint arXiv:1908.03856},
+  year={2019}
+}

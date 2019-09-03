@@ -1,0 +1,7 @@
+@inproceedings{m2019all,
+  title={All-in-One Underwater Image Enhancement Using Domain-Adversarial Learning},
+  author={M Uplavikar, Pritish and Wu, Zhenyu and Wang, Zhangyang},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops},
+  pages={1--8},
+  year={2019}
+}
