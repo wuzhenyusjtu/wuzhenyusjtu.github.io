@@ -1,0 +1,6 @@
+@article{wu2020mm,
+  title={MM-Hand: 3D-Aware Multi-Modal Guided Hand Generative Network for 3D Hand Pose Synthesis},
+  author={Wu, Zhenyu and Hoang, Duc and Lin, Shih-Yao and Xie, Yusheng and Chen, Liangjian and Lin, Yen-Yu and Wang, Zhangyang and Fan, Wei},
+  journal={arXiv preprint arXiv:2010.01158},
+  year={2020}
+}
